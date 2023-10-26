@@ -1,107 +1,129 @@
 /* 
-Author: Richard Langdon
-Date: 2023-10-25
-File: styles.css 
+    Author: Richard Langdon
+    Date: 2023-09-26
+    File: styles.css
 */
 
 /* CSS Reset */
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li, nav, header, main, footer, section, figure, figcaption, a, img {
+body, div, h1, h2, p, ul, li, nav, header, footer, main, section, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Using Roboto font with a fallback, ensure you link Roboto font from Google Fonts in your HTML */
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 body {
-    background-color: #f7f9fc; /* Soft blue background */
-    color: #333; /* Dark text for contrast */
-    line-height: 1.6;
-    font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif; /* Using Open Sans for a modern look. Make sure to link this from Google Fonts in your HTML */
+    color: #333;
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9); /* subtle gradient background */
+    line-height: 1.6; /* improved readability */
 }
 
-header {
-    background-color: #2c3e50; /* Darker header */
-    color: #ecf0f1; /* Light text on dark background */
-    text-align: center;
-    padding: 2rem 0;
-}
-
-header h1 {
-    margin-bottom: 1rem;
-}
-
-header img {
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 1rem;
-}
-
-/* Navigation Styles */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center; /* Centering the nav items */
-    background-color: #34495e; /* Slightly lighter than header */
-    padding: 0.5rem 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ecf0f1;
-    padding: 0.5rem 2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    background-color: #2c3e50;
-    color: #f7f9fc;
-}
-
-/* Responsive Images */
 img {
     max-width: 100%;
     display: block;
-    margin: 2rem auto; /* Added more margin for breathing space */
 }
 
-/* Main content */
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #555;
+}
+
+/* Header styles */
+header#sticky-header {
+    padding: 20px 30px;
+    background-color: #20232a;  /* Dark background for contrast */
+    color: white; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center; 
+}
+
+header#sticky-header h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 2.5em;
+    color: #61dafb;  /* A nice blue shade */
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+}
+
+header#sticky-header h1 a {
+    color: inherit;
+}
+
+header#sticky-header img {
+    vertical-align: middle;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #61dafb;
+    color: #20232a;
+}
+
+/* Main and breadcrumb */
 main {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 2rem auto; /* More centered main content */
-    background-color: #fff; /* White card background for main content */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    border-radius: 8px; /* Rounded corners for the card */
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;  /* Rounded edges */
 }
 
 #breadcrumb {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
-#breadcrumb a {
-    text-decoration: none;
-    color: #0077cc;
+/* Graphics section */
+#graphics h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-#breadcrumb a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+figure {
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
+}
+
+/* Footer styles */
+footer {
+    padding: 30px 40px;
+    background-color: #20232a;
+    color: #61dafb;
+    text-align: center;
+    margin-top: 40px;
 }
 
 footer a {
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #61dafb;
 }
 
 footer a:hover {
-    color: #f7f9fc;
+    color: #ffffff;
 }
