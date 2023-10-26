@@ -1,0 +1,93 @@
+/* 
+Author: Richard Langdon
+Date: 2023-10-25
+File: styles.css 
+*/
+
+/* CSS Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, nav, header, main, footer, section, figure, figcaption, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Default font with a fallback */
+}
+
+body {
+    background-color: #f4f4f4; /* A light gray background */
+    color: #333; /* Dark gray text for high contrast */
+    line-height: 1.6; /* Spacing between lines for better readability */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555; /* Slight shade change on hover */
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto; /* Centers block-level elements */
+}
+
+/* Main content */
+main {
+    padding: 1rem;
+    max-width: 1200px; /* Setting a maximum width */
+    margin: 0 auto; /* Centering the main content */
+}
+
+#breadcrumb a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+#breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
