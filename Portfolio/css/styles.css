@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, div, h1, h2, p, ul, li, nav, header, footer, main, section, figure, figcaption {
+body, div, h1, h2, p, ul, li, nav, header, footer, main, section, article, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -13,6 +13,8 @@ body, div, h1, h2, p, ul, li, nav, header, footer, main, section, figure, figcap
     font: inherit;
     vertical-align: baseline;
 }
+
+
 
 body {
     font-family: 'Open Sans', Arial, sans-serif; 
