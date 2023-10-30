@@ -26,7 +26,9 @@ body {
 img {
     max-width: 100%;
     display: block;
+    box-shadow: 4px 4px 8px #888888; 
 }
+
 
 a {
     text-decoration: none;
