@@ -15,7 +15,7 @@ body, div, h1, h2, p, ul, li, nav, header, footer, main, section, figure, figcap
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif; /* Using Open Sans for a modern look. Make sure to link this from Google Fonts in your HTML */
+    font-family: 'Open Sans', Arial, sans-serif; 
     color: #333;
     background: linear-gradient(to bottom, #eaeaea, #f9f9f9); /* subtle gradient background */
     line-height: 1.6; /* improved readability */
