@@ -2,10 +2,11 @@
     Author: Richard Langdon
     Date: 2023-09-26
     File: styles.css
+    Description: Stylesheet for personal portfolio, including table and form styles for various viewports.
 */
 
 /* CSS Reset */
-body, div, h1, h2, p, ul, li, nav, header, footer, main, section, article, aside, figure, figcaption {
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, nav, header, footer, main, section, article, aside, figure, figcaption, table, th, td, input, select, textarea, button {
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,22 +15,22 @@ body, div, h1, h2, p, ul, li, nav, header, footer, main, section, article, aside
     vertical-align: baseline;
 }
 
-
-
+/* Body styles */
 body {
     font-family: 'Open Sans', Arial, sans-serif; 
     color: #333;
-    background: linear-gradient(to bottom, #eaeaea, #f9f9f9); /* subtle gradient background */
-    line-height: 1.6; /* improved readability */
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9); /* Subtle gradient background */
+    line-height: 1.6; /* Improved readability */
 }
 
+/* Image styles */
 img {
     max-width: 100%;
     display: block;
     box-shadow: 4px 4px 8px #888888; 
 }
 
-
+/* Link styles */
 a {
     text-decoration: none;
     color: #333;
@@ -43,7 +44,7 @@ a:hover {
 /* Header styles */
 header#sticky-header {
     padding: 20px 30px;
-    background-color: #20232a;  /* Dark background  */
+    background-color: #20232a;  /* Dark background */
     color: white; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     text-align: center; 
@@ -54,7 +55,7 @@ header#sticky-header h1 {
     margin: 0;
     padding: 0 20px;
     font-size: 2.5em;
-    color: #61dafb;  /* blue shade */
+    color: #61dafb;  /* Blue shade */
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
 }
 
@@ -113,6 +114,110 @@ main {
 
 figure {
     text-align: center;
+}
+
+/* Table styles */
+/* Grey background for section headers */
+h3, h4 {
+    background-color: grey;
+    color: white;
+    padding: 10px; /* Added padding for better styling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* subtle line between rows */
+}
+
+th {
+    background-color: #f2f2f2; /* light grey background for header */
+}
+
+/* Responsive styles for tablet */
+@media (max-width: 768px) {
+    th, td {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+    table {
+        display: none; /* Hide table on mobile */
+    }
+
+    /* Styles for mobile list alternative */
+    .mobile-list {
+        display: block;
+    }
+
+    .mobile-list li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Form styles */
+form {
+    margin: 20px 0;
+}
+
+/* Form input and textarea styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded borders */
+}
+
+/* Style for form submit button */
+input[type="submit"] {
+    background-color: #61dafb; /* Blue background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #4095c6; /* Darker blue on hover */
+}
+
+/* Responsive form styles for tablet */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 10px; /* Slightly larger padding on tablet */
+        font-size: 0.9em; /* Adjust font size for tablets */
+    }
+}
+
+/* Responsive form styles for mobile */
+@media (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 0.8em; /* Adjust font size for mobiles */
+    }
 }
 
 /* Footer styles */
