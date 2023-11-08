@@ -91,6 +91,28 @@ nav ul li a:hover {
     color: #20232a;
 }
 
+/* CSS for hiding the hamburger menu button by default */
+.hamburger-menu-button {
+    display: none;
+}
+
+/* CSS for styling the hamburger icon */
+.hamburger-menu-button .bar {
+    background-color: #333; /* Customize the color as needed */
+    height: 3px;
+    width: 25px;
+    display: block;
+    margin: 5px auto;
+    transition: 0.4s;
+}
+
+/* CSS for displaying the hamburger menu button on smaller screens */
+@media (max-width: 768px) {
+    .hamburger-menu-button {
+        display: block;
+    }
+}
+
 
 
 /* Main and breadcrumb */
